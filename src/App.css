@@ -1,39 +1,53 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Inter", sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.sliderMainImg {
+  opacity: 100%;
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sliderImg {
+  opacity: 0%;
+  transform: scale(.9);
+  transition: all ease-in-out 0.5s;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.dots {
+  position: absolute;
+  left: 43%;
+  bottom: 15%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.slide-text {
+  position: absolute;
+  top: 15%;
+  left: 29%;
 }
+
+.slide-btn-left {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+
+.slide-btn-right {
+  position: absolute;
+  top: 55%;
+  left: 90%;
+}
+
+.clothes-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+
+
